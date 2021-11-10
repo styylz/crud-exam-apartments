@@ -24,7 +24,7 @@ class ApartmentCardComponent {
   formatTitle = (title) => title[0].toUpperCase() + title.slice(1, title.length).toLowerCase();
 
   init = () => {
-    const { type, owner, roomCount, squares, address, price, imgSrc } = this.props;
+    const { type, owner, roomCount, squares, address, price, imgSrc, onDelete } = this.props;
 
     const adressFormated = `${address.street}-${address.number} ${address.city} ${address.country}`
 
@@ -32,8 +32,9 @@ class ApartmentCardComponent {
     this.htmlElement.innerHTML = `
     <div class="card">
     <img class="card-img-top" src="${imgSrc}">
-    <div class="card-body">
+    <div class="card-body position-relative">
       <h5 class="card-title text-center">${this.formatTitle(type)}</h5>
+      <div class= "border p-1">
       <div>
         <p>Room Count: ${roomCount}</p>
         <p>Squares: ${squares}</p>
@@ -41,19 +42,21 @@ class ApartmentCardComponent {
       <p class="card-text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias,
       </p>
-      <div>
-         <p>Name: ${owner.fullname} </p>
-         <p>Email: ${owner.email} </p>
-         <p>Phone: ${owner.phone} </p>
+      <ul class="list-unstyled">
+         <li>  Name: ${owner.fullname} </li>
+         <li>  Email: ${owner.email} </li>
+         <li>  Phone: ${owner.phone} </li>
+       </ul>
        </div>
-
        <p><strong>Address:</strong> ${adressFormated}<p>
-       <p>Price: ${this.currConverted(price.currency, price.amount)} € </p>
+       <p><strong>Price: </strong> ${this.currConverted(price.currency, price.amount)} € </p>
+       <div><button class="btn btn-danger btn-sm bottom-0 start-0 mt-3 ">✕</button> </div>
 
   </div>
-
   </div>
   `
+  const delBtn = this.htmlElement.querySelector('.btn');
+  delBtn.addEventListener('click', onDelete);
 
   };
 }
