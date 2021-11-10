@@ -1,0 +1,70 @@
+{
+  "Apartment": [
+    {
+      "id": "100",
+      "type": "house",
+      "owner": {
+        "fullname": "Johnas",
+        "email": "johnasTheMighty@gmail.com",
+        "phone": "+37069932331"
+      },
+      "roomCount": 4,
+      "squares": 280,
+      "address": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "street": "survived st. ",
+        "number": "13"
+      },
+      "price": {
+        "amount": 120000,
+        "currency": "$"
+      },
+      "imgSrc": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fcdn.thecoolist.com%2Fwp-content%2Fuploads%2F2010%2F02%2Fisland-house_stockholm-sweden_1.jpg&sp=1636526160T9d3376aad8196b6093599da97234986770217597b500913b4dfdeb8a63858f29"
+    },
+    {
+      "id": "101",
+      "type": "flat",
+      "owner": {
+        "fullname": "Ashtonas",
+        "email": "ashtonNotAshtonas@gmail.com",
+        "phone": "+3706332667"
+      },
+      "roomCount": 3,
+      "squares": 180,
+      "address": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "street": "survived st. ",
+        "number": "13"
+      },
+      "price": {
+        "amount": 190000,
+        "currency": "$"
+      },
+      "imgSrc": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwww.idesignarch.com%2Fwp-content%2Fuploads%2FTegn%25C3%25A9rlunden-Apartment_1.jpg&sp=1636526183Tfe0203a89f1e42f31ce9938b3c8a273aea3b91eddf7b3fdd0a17d9c9a21f7998"
+    },
+    {
+      "id": "102",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Kuper",
+        "email": "kuperBazinga@yahoo.com",
+        "phone": "+37011111111"
+      },
+      "roomCount": 6,
+      "squares": 300,
+      "address": {
+        "city": "United Kingdom",
+        "country": "London",
+        "street": "Larry porter st. ",
+        "number": "69"
+      },
+      "price": {
+        "amount": 133337,
+        "currency": "€"
+      },
+      "imgSrc": "https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1588880331179-bc9b93a8cb5e%3Fixid%3DMnwxMjA3fDB8MHxzZWFyY2h8M3x8Y290dGFnZXxlbnwwfHwwfHw%253D%26ixlib%3Drb-1.2.1%26w%3D1000%26q%3D80&sp=1636526319T14e59b45c4cb303c78cf2285a4010efd84302a35a7a8cc4a0199ef2eb01504d3"
+    }
+  ]
+}
