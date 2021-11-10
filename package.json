@@ -1,0 +1,23 @@
+{
+  "name": "crud-exam-apartments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-win": "node_modules\\.bin\\json-server --watch db.json",
+    "start-unix": "node_modules/.bin/json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styylz/crud-exam-apartments.git"
+  },
+  "author": "Miroslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/styylz/crud-exam-apartments/issues"
+  },
+  "homepage": "https://github.com/styylz/crud-exam-apartments#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
